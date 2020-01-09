@@ -1,4 +1,4 @@
-# Git Commands Cheat Sheet
+# Git Cheat Sheet
 short-hand notes for common git commands
 
 ## remote push deployment
@@ -11,7 +11,7 @@ $ cd /home/user/repo.git
 $ git init --bare
 ```
 
-2. Create trigger script in `/home/user/repo.git/hooks/post-receive`
+2. Create trigger script in `/home/user/repo.git/hooks/post-receive`:
 
 ```bash
 #!/bin/sh
@@ -23,16 +23,24 @@ Make sure the file is executable:
 
 3. Clone the bare repo to the working directory:
 
-`git clone ~/user/repo.git ~/user/path/to/repo`
+```shell
+$ git clone ~/user/repo.git ~/user/path/to/repo`
+```
 
 4. Prepare the local client side:
 
-`git remote add staging ssh://user@hostname/home/user/repo.git`
+```shell
+$ git remote add staging ssh://user@hostname/home/user/repo.git
+```
 
 List and check local remotes:
 
-`$  git remote -v`
+```shell
+$  git remote -v
+```
 
 5. Done. Push changes to specific remote with:
 
-`$  git push staging master`
+```shell
+$  git push staging master
+```
