@@ -1,6 +1,8 @@
 # Git Cheat Sheet
 short-hand notes for common git commands
 
+
+
 ## remote push deployment
 
 1. Login to remote server:
@@ -44,3 +46,5 @@ $  git remote -v
 ```shell
 $  git push staging master
 ```
+
+***
