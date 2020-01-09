@@ -1,9 +1,7 @@
 # Git Cheat Sheet
 short-hand notes for common git commands
 
-
-
-## remote push deployment
+## setup remote deployment
 
 1. Login to remote server:
 
@@ -26,7 +24,7 @@ Make sure the file is executable:
 3. Clone the bare repo to the working directory:
 
 ```shell
-$ git clone ~/user/repo.git ~/user/path/to/repo`
+$ git clone ~/user/repo.git ~/user/path/to/repo
 ```
 
 4. Prepare the local client side:
