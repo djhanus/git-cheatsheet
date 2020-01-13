@@ -46,3 +46,11 @@ $  git push staging master
 ```
 
 ***
+
+## load state of previous commit
+
+```shell
+$  git log
+$  git checkout -b BRANCHNAME COMMITVERSION
+$  git branch --list
+```
